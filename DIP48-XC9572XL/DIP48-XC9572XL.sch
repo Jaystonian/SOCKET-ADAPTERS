@@ -89,12 +89,12 @@ $EndComp
 $Comp
 L Power2:+5V #PWR0104
 U 1 1 5F578AA2
-P 8650 2100
-F 0 "#PWR0104" H 8650 1950 50  0001 C CNN
-F 1 "+5V" H 8665 2273 50  0000 C CNN
-F 2 "" H 8650 2100 50  0001 C CNN
-F 3 "" H 8650 2100 50  0001 C CNN
-	1    8650 2100
+P 9050 1300
+F 0 "#PWR0104" H 9050 1150 50  0001 C CNN
+F 1 "+5V" H 9065 1473 50  0000 C CNN
+F 2 "" H 9050 1300 50  0001 C CNN
+F 3 "" H 9050 1300 50  0001 C CNN
+	1    9050 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -841,7 +841,7 @@ Wire Wire Line
 Entry Wire Line
 	2100 4350 2000 4450
 Text Label 2100 4350 0    50   ~ 0
-PIN_01
+PIN_4801
 Wire Wire Line
 	4150 4850 4600 4850
 Entry Wire Line
@@ -997,8 +997,72 @@ Entry Wire Line
 	10000 1450 9900 1350
 Wire Bus Line
 	4700 1800 2000 1800
+$Comp
+L Jumper:SolderJumper_3_Open JP48
+U 1 1 5FF0211B
+P 8850 1300
+F 0 "JP48" H 8850 1505 50  0000 C CNN
+F 1 "SJ48" H 8850 1414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 8850 1300 50  0001 C CNN
+F 3 "~" H 8850 1300 50  0001 C CNN
+	1    8850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5FF03044
+P 8550 1650
+F 0 "JP1" H 8550 1855 50  0000 C CNN
+F 1 "SJ1" H 8550 1764 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 8550 1650 50  0001 C CNN
+F 3 "~" H 8550 1650 50  0001 C CNN
+	1    8550 1650
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7500 2100 7400 2200
+Text Label 7500 2100 0    50   ~ 0
+PIN_48
+Entry Wire Line
+	7500 1950 7400 2050
+Text Label 7500 1950 0    50   ~ 0
+PIN_01
+Entry Wire Line
+	7500 1800 7400 1900
+Text Label 7500 1800 0    50   ~ 0
+PIN_4801
+Wire Wire Line
+	7950 1650 7500 1650
+Entry Wire Line
+	7500 1650 7400 1750
+Text Label 7500 1650 0    50   ~ 0
+PIN_48
+Wire Wire Line
+	7500 2100 8650 2100
+Wire Wire Line
+	9050 1300 9050 1650
+Wire Wire Line
+	9050 1650 8750 1650
+Connection ~ 9050 1300
+Wire Wire Line
+	7500 1800 8350 1800
+Wire Wire Line
+	8350 1800 8350 1650
+Wire Wire Line
+	8350 1650 8350 1300
+Wire Wire Line
+	8350 1300 8650 1300
+Connection ~ 8350 1650
+Wire Wire Line
+	8550 1950 8550 1800
+Wire Wire Line
+	7500 1950 8550 1950
+Wire Wire Line
+	7950 1650 7950 1450
+Wire Wire Line
+	7950 1450 8850 1450
 Wire Bus Line
-	7400 2500 7400 6000
+	7400 1750 7400 6000
 Wire Bus Line
 	9900 1050 9900 6000
 Wire Bus Line
